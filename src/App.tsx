@@ -1,5 +1,5 @@
-const App = () => {
-    return <div className="flex">Sos BB :)</div>;
+const App: React.FC<NonNullable<unknown>> = () => {
+    return <div className="">Sos BB :)</div>;
 };
 
 export default App;
