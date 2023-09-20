@@ -39,6 +39,9 @@ export const MenuIconContainer = style({
             transform: "scaleY(1)",
             zIndex: 11,
         },
+        "&.open": {
+            backgroundColor: "#FFCB00",
+        },
     },
 });
 
@@ -51,18 +54,18 @@ export const MenuBar = style({
     transition: "rotate .3s ease-in-out",
 
     selectors: {
-        [`${MenuIconContainer}:hover &`]: {
-            "&#top": {
-                rotate: "-45deg",
-                translate: "0 .2rem",
-                transformOrigin: "center",
-            },
-
-            "&#bottom": {
-                rotate: "45deg",
-                translate: "0 -.2rem",
-                transformOrigin: "center",
-            },
+        [`${MenuIconContainer}.open &`]: {
+            backgroundColor: "#000",
+        },
+        [`${MenuIconContainer}.open #top&`]: {
+            rotate: "-45deg",
+            translate: "0 .2rem",
+            transformOrigin: "center",
+        },
+        [`${MenuIconContainer}.open #bottom&`]: {
+            rotate: "45deg",
+            translate: "0 -.2rem",
+            transformOrigin: "center",
         },
     },
 });

@@ -6,8 +6,8 @@ type NavbarProps = object;
 const Navbar: React.FC<NavbarProps> = () => {
     return (
         <div>
-            {/* <MenuIcon /> */}
-            <SidebarMenu />
+            <MenuIcon />
+            {/* <SidebarMenu /> */}
         </div>
     );
 };
