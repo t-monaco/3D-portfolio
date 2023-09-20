@@ -3,10 +3,10 @@ import { style } from "@vanilla-extract/css";
 const CONTAINER_LENGHT_UNITS = 4; // size in rem
 
 export const MenuIconContainer = style({
-    margin: "10rem auto", //!! REMOVE
+    // margin: "10rem auto", //!! REMOVE
     cursor: "pointer",
     position: "relative",
-    backgroundColor: "#000",
+    backgroundColor: "#1c1d20",
     width: `${CONTAINER_LENGHT_UNITS}rem`,
     height: `${CONTAINER_LENGHT_UNITS}rem`,
     borderRadius: `${CONTAINER_LENGHT_UNITS * 0.5}rem`,
@@ -16,7 +16,7 @@ export const MenuIconContainer = style({
     alignItems: "center",
     gap: ".3rem",
     overflow: "hidden",
-    zIndex: 0,
+    zIndex: 10,
     border: 0,
 
     "::after": {
@@ -37,7 +37,7 @@ export const MenuIconContainer = style({
         "&:hover::after": {
             transformOrigin: "bottom",
             transform: "scaleY(1)",
-            zIndex: 1,
+            zIndex: 11,
         },
     },
 });
@@ -47,7 +47,7 @@ export const MenuBar = style({
     display: "block",
     height: ".1rem",
     width: `${CONTAINER_LENGHT_UNITS * 0.4}rem`,
-    zIndex: 2,
+    zIndex: 12,
     transition: "rotate .3s ease-in-out",
 
     selectors: {
