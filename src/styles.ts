@@ -14,4 +14,12 @@ const styles = {
         "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
 };
 
-export { styles };
+const breakpoints = {
+    sm: "640px",
+    md: "768px",
+    lg: "1024px",
+    xl: "1280px",
+    "2xl": "1536px",
+};
+
+export { styles, breakpoints };

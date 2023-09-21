@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { breakpoints } from "../../../styles";
 
 export const SidebarMenuContainer = style({
     backgroundColor: "#050816",
@@ -8,7 +9,7 @@ export const SidebarMenuContainer = style({
     flexDirection: "column",
     height: "100vh",
     justifyContent: "space-between",
-    left: 0,
+    right: 0,
     overflow: "hidden",
     overflowY: "hidden",
     padding: "8rem 2rem 2rem 2rem",
@@ -26,7 +27,7 @@ export const SidebarMenuContainer = style({
         borderRadius: "100% 0% 0% 37% / 62% 0% 0% 22% ",
         content: "",
         height: "100vh",
-        left: 0,
+        right: 0,
         position: "absolute",
         top: 0,
         width: "100vw",
@@ -37,7 +38,13 @@ export const SidebarMenuContainer = style({
         "&.open": {
             borderBottomLeftRadius: "0",
             borderTopLeftRadius: "0",
-            transform: "translateX(0vw)",
+            transform: "translateX(0)",
         },
     },
+
+    // "@media": {
+    //     [`screen and (min-width: ${breakpoints.md})`]: {
+    //         width: "26rem",
+    //     },
+    // },
 });
