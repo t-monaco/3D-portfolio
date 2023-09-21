@@ -1,15 +1,8 @@
-import { useState } from "react";
 import { MenuBar, MenuIconContainer } from "./menuIcon.css";
 
-type MenuIconProps = object;
+type MenuIconProps = { handleClick: () => void; isOpen: boolean };
 
-const MenuIcon: React.FC<MenuIconProps> = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const handleClick = () => {
-        setIsOpen(!isOpen);
-    };
-
+const MenuIcon: React.FC<MenuIconProps> = ({ handleClick, isOpen }) => {
     return (
         <div
             className={`${MenuIconContainer} ${isOpen ? "open" : ""}`}

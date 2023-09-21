@@ -1,13 +1,29 @@
+import { useEffect, useState } from "react";
 import MenuIcon from "./MenuIcon";
-import SidebarMenu from "./SideBarMenu";
+import SidebarMenu from "./SidebarMenu";
+import { disableScroll, enableScroll } from "../../utils/scroll";
 
 type NavbarProps = object;
 
 const Navbar: React.FC<NavbarProps> = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+
+    const handleClick = () => {
+        setIsOpen(!isOpen);
+    };
+
+    useEffect(() => {
+        if (isOpen) {
+            disableScroll();
+        } else {
+            enableScroll();
+        }
+    }, [isOpen]);
+
     return (
-        <div>
-            <MenuIcon />
-            {/* <SidebarMenu /> */}
+        <div className="fixed">
+            <MenuIcon handleClick={handleClick} isOpen={isOpen} />
+            <SidebarMenu isOpen={isOpen} />
         </div>
     );
 };
