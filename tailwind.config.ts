@@ -21,6 +21,9 @@ export default {
             },
             backgroundImage: {
                 "hero-pattern": "url('/src/assets/herobg.png')",
+                "pink-wall": "url('/src/assets/bg-pink-wall.jpg')",
+                "bg-me": "url('/src/assets/bg-me.png')",
+                "bg-wall-bw": "url('/src/assets/bg-wall-bw.png')",
             },
         },
     },
