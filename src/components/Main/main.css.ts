@@ -19,10 +19,24 @@ const LleftToRight = keyframes({
     to: { transform: "translateX(0)" },
 });
 
+const RightToLeft = keyframes({
+    from: { transform: "translateX(0)" },
+    to: { transform: "translateX(-100%)" },
+});
+
 export const ScrollTextContainer = style({
     display: "flex",
     alignItems: "center",
-    animation: `${LleftToRight} 14s infinite linear`,
+    transition: "all 1s ease",
+
+    selectors: {
+        "&.up": {
+            animation: `${RightToLeft} 14s infinite linear`,
+        },
+        "&.down": {
+            animation: `${LleftToRight} 14s infinite linear`,
+        },
+    },
 });
 
 export const ProfessionContainer = style({
