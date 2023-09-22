@@ -22,7 +22,9 @@ export default {
             backgroundImage: {
                 "hero-pattern": "url('/src/assets/herobg.png')",
                 "pink-wall": "url('/src/assets/bg-pink-wall.jpg')",
-                "bg-me": "url('/src/assets/bg-me.png')",
+                "main-wall": "url('/src/assets/main-wall.png')",
+                "main-solid": "url('/src/assets/main-solid.png')",
+                "main-transp": "url('/src/assets/main-transp.png')",
                 "bg-wall-bw": "url('/src/assets/bg-wall-bw.png')",
             },
         },
