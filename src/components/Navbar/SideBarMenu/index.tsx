@@ -32,17 +32,17 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ isOpen }) => {
                     SOCIALS
                 </h2>
                 <ul className="flex justify-between">
-                    <li className="text-sm md:text-lg font-light md:font-extralight">
+                    <li className="text-sm md:text-lg font-light">
                         <a className={`${SocialLink}`} href="">
                             LinkedIn
                         </a>
                     </li>
-                    <li className="text-sm md:text-lg font-light md:font-extralight">
+                    <li className="text-sm md:text-lg font-light">
                         <a className={`${SocialLink}`} href="">
                             Github
                         </a>
                     </li>
-                    <li className="text-sm md:text-lg font-light md:font-extralight">
+                    <li className="text-sm md:text-lg font-light">
                         <a className={`${SocialLink}`} href="">
                             Mail
                         </a>

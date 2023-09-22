@@ -14,7 +14,7 @@ export const ParallaxTextContainer = style({
 export const ParallaxTextScroller = style({
     selectors: {
         [`${ParallaxTextContainer} &`]: {
-            fontWeight: 500,
+            fontWeight: 400,
             fontSize: "8rem",
             display: "flex",
             whiteSpace: "nowrap",
@@ -26,7 +26,6 @@ export const ParallaxTextScroller = style({
         [`screen and (min-width: ${breakpoints.md})`]: {
             selectors: {
                 [`${ParallaxTextContainer} &`]: {
-                    fontWeight: 300,
                     fontSize: "12rem",
                 },
             },

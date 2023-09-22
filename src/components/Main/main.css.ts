@@ -17,12 +17,13 @@ export const ScrollContainerList = style({
 
 export const ProfessionContainer = style({
     padding: "0 1rem",
-    fontSize: "1.8rem",
+    fontSize: "1.5rem",
 
     "@media": {
         [`screen and (min-width: ${breakpoints.lg})`]: {
+            textAlign: "right",
             position: "absolute",
-            right: "5vw",
+            right: "2vw",
             bottom: "40vh",
             fontSize: "2.5rem",
             fontWeight: "300",
