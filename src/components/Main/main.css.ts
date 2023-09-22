@@ -1,40 +1,16 @@
-import { keyframes, style } from "@vanilla-extract/css";
+import { style } from "@vanilla-extract/css";
 import { breakpoints } from "../../styles";
 
 export const ScrollContainerList = style({
-    whiteSpace: "nowrap",
     display: "flex",
+    padding: "1rem 0",
+    whiteSpace: "nowrap",
 
     "@media": {
         [`screen and (min-width: ${breakpoints.lg})`]: {
-            position: "absolute",
-            left: 0,
             bottom: "3rem",
-        },
-    },
-});
-
-const LleftToRight = keyframes({
-    from: { transform: "translateX(-100%)" },
-    to: { transform: "translateX(0)" },
-});
-
-const RightToLeft = keyframes({
-    from: { transform: "translateX(0)" },
-    to: { transform: "translateX(-100%)" },
-});
-
-export const ScrollTextContainer = style({
-    display: "flex",
-    alignItems: "center",
-    transition: "all 1s ease",
-
-    selectors: {
-        "&.up": {
-            animation: `${RightToLeft} 14s infinite linear`,
-        },
-        "&.down": {
-            animation: `${LleftToRight} 14s infinite linear`,
+            left: 0,
+            position: "absolute",
         },
     },
 });

@@ -1,37 +1,9 @@
-import { useCallback, useEffect, useState } from "react";
-import {
-    ProfessionContainer,
-    ScrollContainerList,
-    ScrollTextContainer,
-} from "./main.css";
+import { ProfessionContainer, ScrollContainerList } from "./main.css";
+import ParallaxText from "../ParallaxText";
 
 type MainProps = object;
 
 const Main: React.FC<MainProps> = () => {
-    const [y, setY] = useState(0);
-    const [scrollDirection, setScrollDirection] = useState<"up" | "down">(
-        "down"
-    );
-
-    const handleScrolling = useCallback(() => {
-        if (y > window.scrollY) {
-            setScrollDirection("up");
-        } else if (y < window.scrollY) {
-            setScrollDirection("down");
-        }
-
-        setY(window.scrollY);
-    }, [y]);
-
-    // TODO: Need to work on how to smoothly switch between animations
-    //     useEffect(() => {
-    //         window.addEventListener("scroll", handleScrolling);
-    //
-    //         return () => {
-    //             window.removeEventListener("scroll", handleScrolling);
-    //         };
-    //     }, [handleScrolling]);
-
     return (
         <div
             className={`w-scree h-screen bg-main-solid bg-cover bg-bottom -z-10 relative overflow-hidden flex flex-col justify-end`}
@@ -46,7 +18,9 @@ const Main: React.FC<MainProps> = () => {
                 id="big-name"
                 className={`${ScrollContainerList} md:font-light`}
             >
-                <div className={`${ScrollTextContainer} ${scrollDirection}`}>
+                <ParallaxText baseVelocity={-3}>Tomas Monaco</ParallaxText>
+
+                {/* <div className={`${ScrollTextContainer} ${scrollDirection}`}>
                     <h1 className="text-9xl md:text-[12rem]">Tomas Monaco</h1>
                     <span className="spacer text-9xl md:text-[12rem] px-4 md:px-8">
                         —
@@ -57,7 +31,7 @@ const Main: React.FC<MainProps> = () => {
                     <span className="spacer text-9xl md:text-[12rem] px-4 md:px-8">
                         —
                     </span>
-                </div>
+                </div> */}
             </section>
         </div>
     );
