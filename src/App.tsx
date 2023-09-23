@@ -1,4 +1,4 @@
-import { Main, Navbar } from "./components";
+import { About, Main, Navbar } from "./components";
 
 const App: React.FC<NonNullable<unknown>> = () => {
     return (
@@ -6,8 +6,9 @@ const App: React.FC<NonNullable<unknown>> = () => {
             <div className=" bg-cover bg-no-repeat bg-center relative">
                 <Navbar />
                 <Main />
-                <div className="min-h-screen">ABOUT</div>
-                <div className="min-h-screen">CONTACT</div>
+                <About />
+                <div className="min-h-screen text-black">ABOUTa</div>
+                <div className="min-h-screen text-black">CONTACT</div>
             </div>
         </div>
     );
