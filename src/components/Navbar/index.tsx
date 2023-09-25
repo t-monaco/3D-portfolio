@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = () => {
     }, [isOpen]);
 
     return (
-        <div className="fixed w-screen">
+        <div className="fixed w-screen z-50">
             <MenuIcon handleClick={handleClick} isOpen={isOpen} />
             <SidebarMenu isOpen={isOpen} />
         </div>

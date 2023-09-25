@@ -1,7 +1,11 @@
 import { motion, useScroll } from "framer-motion";
 import { PropsWithChildren, useRef } from "react";
 import { useParallax } from "../../hooks/useParallax";
-import { ParallaxViewSection } from "./parallaxView.css";
+import {
+    ParallaxTitle,
+    ParallaxViewChildContainer,
+    ParallaxViewSection,
+} from "./parallaxView.css";
 
 type ParallaxViewProps = {
     id: number;
@@ -15,15 +19,18 @@ const ParallaxView: React.FC<PropsWithChildren<ParallaxViewProps>> = ({
 }) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({ target: ref });
-    const y = useParallax(scrollYProgress, 300);
+    const y = useParallax(scrollYProgress, 500);
 
     return (
-        <section
-            id={`${id}`}
-            className={`min-h-screen w-full bg-red-400 ${ParallaxViewSection}`}
-        >
-            <div ref={ref}>{props.children}</div>
-            {title && <motion.h2 style={{ y }}>{`ABOUT`}</motion.h2>}
+        <section id={`${id}`} className={`bg-red-400 ${ParallaxViewSection}`}>
+            <div ref={ref} className={`${ParallaxViewChildContainer}`}>
+                {props.children}
+            </div>
+            {title && (
+                <motion.h2 style={{ y }} className={`${ParallaxTitle}`}>
+                    {title}
+                </motion.h2>
+            )}
         </section>
     );
 };

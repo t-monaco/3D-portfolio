@@ -7,8 +7,6 @@ const App: React.FC<NonNullable<unknown>> = () => {
                 <Navbar />
                 <Main />
                 <About />
-                <div className="min-h-screen text-black">ABOUTa</div>
-                <div className="min-h-screen text-black">CONTACT</div>
             </div>
         </div>
     );
