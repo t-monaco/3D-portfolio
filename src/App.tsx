@@ -1,4 +1,4 @@
-import { About, Main, Navbar } from "./components";
+import { About, Contact, Experience, Main, Navbar } from "./components";
 
 const App: React.FC<NonNullable<unknown>> = () => {
     return (
@@ -7,6 +7,8 @@ const App: React.FC<NonNullable<unknown>> = () => {
                 <Navbar />
                 <Main />
                 <About />
+                <Experience />
+                <Contact />
             </div>
         </div>
     );
