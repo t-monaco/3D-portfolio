@@ -1,16 +1,12 @@
 import { ButtonHTMLAttributes, PropsWithChildren } from "react";
-import { BasicBtn } from "./BasicButton.css";
+import * as Styled from "./BasicButton.styled";
 
 type BasicButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 const BasicButton: React.FC<PropsWithChildren<BasicButtonProps>> = ({
     ...btnProps
 }) => {
-    return (
-        <button className={`${BasicBtn}`} {...btnProps}>
-            {btnProps.children}
-        </button>
-    );
+    return <Styled.BasicButton>{btnProps.children}</Styled.BasicButton>;
 };
 
 export default BasicButton;
