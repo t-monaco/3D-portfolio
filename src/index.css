@@ -14,6 +14,28 @@
     color-scheme: dark;
 }
 
+@layer components {
+    .my-section {
+        @apply w-screen h-screen relative;
+    }
+
+    .my-section > div {
+        @apply w-screen md:max-w-[800px] mx-auto;
+    }
+
+    .common-content {
+        @apply text-justify px-8 h-screen flex flex-col gap-10 justify-center mx-auto;
+    }
+
+    .common-content .common-title {
+        @apply text-5xl font-bold md:text-6xl;
+    }
+
+    .common-content .text-container {
+        @apply flex flex-col gap-4;
+    }
+}
+
 .hash-span {
     margin-top: -100px;
     padding-bottom: 100px;
