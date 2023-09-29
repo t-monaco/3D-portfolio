@@ -1,6 +1,6 @@
-import { ProfessionContainer, ScrollContainerList } from "./main.css";
-import ParallaxText from "../ParallaxText";
 import { Reveal } from "..";
+import ParallaxText from "../ParallaxText";
+import * as Styled from "./Main.styled";
 
 type MainProps = object;
 
@@ -10,19 +10,19 @@ const Main: React.FC<MainProps> = () => {
             className={`w-scree h-screen bg-main-solid bg-cover bg-bottom -z-10 relative overflow-hidden flex flex-col justify-end`}
         >
             <Reveal>
-                <section id="profession" className={`${ProfessionContainer}`}>
+                <Styled.ProfessionContainer id="profession">
                     <h2 className="flex flex-col">
                         <span>Software Engineer</span>
                         <span>Data Nerd & Drone Pilot</span>
                     </h2>
-                </section>
+                </Styled.ProfessionContainer>
             </Reveal>
-            <section
+            <Styled.ScrollTextContainer
                 id="big-name"
-                className={`${ScrollContainerList} md:font-light`}
+                className={`lg:font-light`}
             >
                 <ParallaxText baseVelocity={-3}>Tomas Monaco</ParallaxText>
-            </section>
+            </Styled.ScrollTextContainer>
         </div>
     );
 };

@@ -1,6 +1,5 @@
 import { wrap } from "@motionone/utils";
 import {
-    motion,
     useAnimationFrame,
     useMotionValue,
     useScroll,
@@ -9,10 +8,7 @@ import {
     useVelocity,
 } from "framer-motion";
 import { useRef } from "react";
-import {
-    ParallaxTextContainer,
-    ParallaxTextScroller,
-} from "./parallaxText.css";
+import * as Styled from "./ParallaxText.styled";
 
 interface ParallaxTextProps {
     children: string;
@@ -68,8 +64,8 @@ const ParallaxText: React.FC<ParallaxTextProps> = ({
      * dynamically generated number of children.
      */
     return (
-        <div className={`${ParallaxTextContainer}`}>
-            <motion.div className={`${ParallaxTextScroller}`} style={{ x }}>
+        <Styled.ParallaxTextContainer>
+            <Styled.TextScroll style={{ x }}>
                 <span>{children}</span>
                 <span className="spacer">&nbsp;-&nbsp;</span>
                 <span>{children}</span>
@@ -78,8 +74,8 @@ const ParallaxText: React.FC<ParallaxTextProps> = ({
                 <span className="spacer">&nbsp;-&nbsp;</span>
                 <span>{children}</span>
                 <span className="spacer">&nbsp;-&nbsp;</span>
-            </motion.div>
-        </div>
+            </Styled.TextScroll>
+        </Styled.ParallaxTextContainer>
     );
 };
 

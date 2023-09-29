@@ -1,16 +1,16 @@
-import { MenuBar, MenuIconContainer } from "./menuIcon.css";
+import * as Styled from "./MenuIcon.styled";
 
 type MenuIconProps = { handleClick: () => void; isOpen: boolean };
 
 const MenuIcon: React.FC<MenuIconProps> = ({ handleClick, isOpen }) => {
     return (
-        <div
-            className={`${MenuIconContainer} ${isOpen ? "open" : ""}`}
+        <Styled.MenuIconContainer
+            className={`${isOpen ? "open" : ""}`}
             onClick={() => handleClick()}
         >
-            <span id="top" className={`${MenuBar}`}></span>
-            <span id="bottom" className={`${MenuBar}`}></span>
-        </div>
+            <span id="top"></span>
+            <span id="bottom"></span>
+        </Styled.MenuIconContainer>
     );
 };
 

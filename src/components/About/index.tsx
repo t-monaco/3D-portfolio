@@ -1,4 +1,3 @@
-// import {ReactComponentElement} from 'react'
 import { Reveal } from "..";
 import { default as DottedPattern } from "../../assets/dotted-pat.svg";
 import { default as StrokePattern } from "../../assets/stroke-pat.svg";

@@ -5,7 +5,7 @@ import {
     RegisterOptions,
     UseFormRegister,
 } from "react-hook-form";
-import { FormField, FormFieldContainer, FormLabel } from "./BasicInput.css";
+import * as Styled from "./BasicInput.styled";
 
 type BasicInputProps<TFormValues extends FieldValues> =
     InputHTMLAttributes<HTMLInputElement> & {
@@ -25,20 +25,14 @@ const BasicInput = <TFormValues extends FieldValues>({
     ...restInputProps
 }: BasicInputProps<TFormValues>) => {
     return (
-        <div
-            className={`${FormFieldContainer} ${
+        <Styled.FormFieldContainer
+            className={`${
                 errorsKeys && errorsKeys.includes(fieldName) ? "error" : ""
             }`}
         >
-            <label className={`${FormLabel}`} htmlFor={fieldName}>
-                {label}
-            </label>
-            <input
-                className={`${FormField}`}
-                {...register(fieldName, validation)}
-                {...restInputProps}
-            />
-        </div>
+            <label htmlFor={fieldName}>{label}</label>
+            <input {...register(fieldName, validation)} {...restInputProps} />
+        </Styled.FormFieldContainer>
     );
 };
 

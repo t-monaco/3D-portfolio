@@ -1,30 +1,30 @@
-import { ListItem, SidebarMenuContainer, SocialLink } from "./sidebarMenu.css";
+import * as Styled from "./SidebarMenu.styled";
 
 type SidebarMenuProps = { isOpen: boolean };
 
 const SidebarMenu: React.FC<SidebarMenuProps> = ({ isOpen }) => {
     return (
-        <div className={`${SidebarMenuContainer} ${isOpen ? "open" : ""}`}>
+        <Styled.SidebarMenuContainer className={`${isOpen ? "open" : ""}`}>
             <section>
                 <h2 className="text-xs text-[#828282] border-b-[1px] border-solid border-[#828282] pb-6">
                     NAVIGATION
                 </h2>
                 <ul className="flex flex-col list-none gap-4 md:gap-6 py-6 md:py-10">
-                    <li
-                        className={`text-5xl md:text-6xl md:font-light cursor-pointer ${ListItem}`}
+                    <Styled.SidebarListItem
+                        className={`text-5xl md:text-6xl md:font-light cursor-pointer`}
                     >
                         Home
-                    </li>
-                    <li
-                        className={`text-5xl md:text-6xl md:font-light cursor-pointer ${ListItem}`}
+                    </Styled.SidebarListItem>
+                    <Styled.SidebarListItem
+                        className={`text-5xl md:text-6xl md:font-light cursor-pointer`}
                     >
                         About
-                    </li>
-                    <li
-                        className={`text-5xl md:text-6xl md:font-light cursor-pointer ${ListItem}`}
+                    </Styled.SidebarListItem>
+                    <Styled.SidebarListItem
+                        className={`text-5xl md:text-6xl md:font-light cursor-pointer`}
                     >
                         Contact
-                    </li>
+                    </Styled.SidebarListItem>
                 </ul>
             </section>
             <section className="social">
@@ -33,23 +33,17 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ isOpen }) => {
                 </h2>
                 <ul className="flex justify-between">
                     <li className="text-sm md:text-lg font-light">
-                        <a className={`${SocialLink}`} href="">
-                            LinkedIn
-                        </a>
+                        <Styled.SocialLink href="">LinkedIn</Styled.SocialLink>
                     </li>
                     <li className="text-sm md:text-lg font-light">
-                        <a className={`${SocialLink}`} href="">
-                            Github
-                        </a>
+                        <Styled.SocialLink href="">Github</Styled.SocialLink>
                     </li>
                     <li className="text-sm md:text-lg font-light">
-                        <a className={`${SocialLink}`} href="">
-                            Mail
-                        </a>
+                        <Styled.SocialLink href="">Mail</Styled.SocialLink>
                     </li>
                 </ul>
             </section>
-        </div>
+        </Styled.SidebarMenuContainer>
     );
 };
 

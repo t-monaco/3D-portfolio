@@ -5,7 +5,7 @@ import {
     RegisterOptions,
     UseFormRegister,
 } from "react-hook-form";
-import { FormField, FormFieldContainer, FormLabel } from "./BasicTextarea.css";
+import * as Styled from "./BasicTextarea.styled";
 
 type BasicTextareaProps<TFormValues extends FieldValues> =
     TextareaHTMLAttributes<HTMLTextAreaElement> & {
@@ -25,20 +25,17 @@ const BasicTextarea = <TFormValues extends FieldValues>({
     ...restTextareaProps
 }: BasicTextareaProps<TFormValues>) => {
     return (
-        <div
-            className={`${FormFieldContainer} ${
+        <Styled.FormFieldContainer
+            className={`${
                 errorsKeys && errorsKeys.includes(fieldName) ? "error" : ""
             }`}
         >
-            <label className={`${FormLabel}`} htmlFor="message">
-                {label}
-            </label>
+            <label htmlFor="message">{label}</label>
             <textarea
-                className={`${FormField}`}
                 {...register(fieldName, validation)}
                 {...restTextareaProps}
             />
-        </div>
+        </Styled.FormFieldContainer>
     );
 };
 
