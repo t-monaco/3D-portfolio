@@ -8,7 +8,7 @@ type NavbarProps = object;
 const Navbar: React.FC<NavbarProps> = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
-    const handleClick = () => {
+    const handleMenuIconClick = () => {
         setIsOpen(!isOpen);
     };
 
@@ -22,8 +22,8 @@ const Navbar: React.FC<NavbarProps> = () => {
 
     return (
         <div className="fixed w-screen z-50">
-            <MenuIcon handleClick={handleClick} isOpen={isOpen} />
-            <SidebarMenu isOpen={isOpen} />
+            <MenuIcon handleClick={handleMenuIconClick} isOpen={isOpen} />
+            <SidebarMenu isOpen={isOpen} onClick={handleMenuIconClick} />
         </div>
     );
 };

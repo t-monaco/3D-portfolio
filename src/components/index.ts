@@ -8,6 +8,7 @@ import Reveal from "./Reveal";
 import BasicInput from "./BasicInput";
 import BasicTextarea from "./BasicTextarea";
 import BasicButton from "./BasicButton";
+import Error404 from "./Errors/404";
 
 export {
     Main,
@@ -20,4 +21,5 @@ export {
     BasicInput,
     BasicTextarea,
     BasicButton,
+    Error404,
 };

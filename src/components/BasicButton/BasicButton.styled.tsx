@@ -27,6 +27,6 @@ export const BasicButton = styled.button<object>`
     }
 
     @media screen and (min-width: ${breakpoints.md}) {
-        width: 40%;
+        width: 30vw;
     }
 `;

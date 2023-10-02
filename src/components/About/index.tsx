@@ -6,7 +6,7 @@ type AboutProps = object;
 
 const About: React.FC<AboutProps> = () => {
     return (
-        <div className="text-black bg-[#d2d2d2] my-section">
+        <div id="about" className="text-black bg-[#d2d2d2] my-section">
             <img
                 src={DottedPattern}
                 alt="dotted pattern"

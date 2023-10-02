@@ -54,7 +54,7 @@ const Contact: React.FC<ContactProps> = () => {
     };
 
     return (
-        <div className="my-section text-black my-section">
+        <div id="contact" className="my-section text-black my-section">
             <Toaster />
             <div className="common-content">
                 <div className="flex flex-col gap-5 items-center">

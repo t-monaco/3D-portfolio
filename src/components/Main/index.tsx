@@ -8,6 +8,7 @@ const Main: React.FC<MainProps> = () => {
     return (
         <div
             className={`w-scree h-screen bg-main-solid bg-cover bg-bottom -z-10 relative overflow-hidden flex flex-col justify-end`}
+            id="home"
         >
             <Reveal>
                 <Styled.ProfessionContainer id="profession">

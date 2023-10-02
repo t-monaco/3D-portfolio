@@ -2,7 +2,7 @@ type ExperienceProps = object;
 
 const Experience: React.FC<ExperienceProps> = () => {
     return (
-        <div className="my-section text-black bg-[#12]">
+        <div id="experience" className="my-section text-black bg-[#12]">
             <div className="common-content">
                 <h3 className="common-title">Experience</h3>
                 <div className="text-container">

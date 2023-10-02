@@ -7,8 +7,12 @@ export const SidebarMenuContainer = styled.div<object>`
     background-color: #050816;
     border-bottom-left-radius: 90vw 100vh;
     border-top-left-radius: 90vw 100vh;
+    cursor: pointer;
     display: flex;
+    flex: 1;
     flex-direction: column;
+    font-size: 3rem;
+    line-height: 1;
     height: 100vh;
     justify-content: space-between;
     right: 0;
@@ -43,6 +47,9 @@ export const SidebarMenuContainer = styled.div<object>`
     }
 
     @media screen and (min-width: ${breakpoints.md}) {
+        font-size: 3.75rem;
+        font-weight: 300;
+        line-height: 1;
         padding: 8rem 6rem 5rem 6rem;
         width: ${SIDEBAR_WIDTH_MD};
 
@@ -77,6 +84,9 @@ export const SidebarListItem = styled.li<object>`
 `;
 
 export const SocialLink = styled.a<object>`
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
     position: relative;
 
     &::after {
@@ -95,5 +105,30 @@ export const SocialLink = styled.a<object>`
         &::after {
             transform: scaleX(1);
         }
+    }
+
+    @media screen and (min-width: ${breakpoints.md}) {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+`;
+
+export const DownloadLink = styled.a<object>`
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin-top: auto;
+    position: relative;
+    transition: color 0.2s ease-out;
+    width: 100%;
+
+    @media screen and (min-width: ${breakpoints.md}) {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    &:hover {
+        color: #ffcb00;
     }
 `;
