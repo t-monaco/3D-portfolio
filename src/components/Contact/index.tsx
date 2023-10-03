@@ -131,7 +131,7 @@ const Contact: React.FC<ContactProps> = () => {
                 </form>
                 {errors && (
                     <div className="errors-list">
-                        <ul className="list-none text-red-600 font-medium text-sm">
+                        <ul className="list-none text-[#7077ff] font-medium text-sm">
                             {Object.values(errors).map((e, key) => {
                                 return (
                                     <li key={key} className="">
