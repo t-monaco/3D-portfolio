@@ -4,7 +4,7 @@ const CONTAINER_LENGTH_UNITS = 4; // size in rem
 
 export const MenuIconContainer = styled.div<object>`
     align-items: center;
-    background-color: #161618;
+    background-color: var(--purple-004);
     border: 0;
     border-radius: ${CONTAINER_LENGTH_UNITS * 0.5}rem;
     cursor: pointer;
@@ -21,7 +21,7 @@ export const MenuIconContainer = styled.div<object>`
     z-index: 10;
 
     &::after {
-        background-color: #7077ff;
+        background-color: var(--purple-001);
         border: 0;
         border-radius: ${CONTAINER_LENGTH_UNITS * 0.5}rem;
         content: "";
@@ -42,12 +42,12 @@ export const MenuIconContainer = styled.div<object>`
         }
 
         & > span {
-            background-color: #161618;
+            background-color: var(--purple-005);
         }
     }
 
     & > span {
-        background-color: #7077ff;
+        background-color: var(--purple-001);
         display: block;
         height: 0.1rem;
         transition: rotate 0.3s ease-in-out,
@@ -57,10 +57,10 @@ export const MenuIconContainer = styled.div<object>`
     }
 
     &.open {
-        background-color: #7077ff;
+        background-color: var(--purple-001);
 
         & > span {
-            background-color: #161618;
+            background-color: var(--purple-005);
             transform-origin: center;
 
             &#top {

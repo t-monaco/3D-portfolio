@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components";
+
 const styles = {
     paddingX: "sm:px-16 px-6",
     paddingY: "sm:py-16 py-6",
@@ -22,4 +24,18 @@ const breakpoints = {
     "2xl": "1536px",
 };
 
-export { styles, breakpoints };
+const GlobalStyles = createGlobalStyle`
+    :root {
+        /* --- COLORS --- */
+        --white : #fff;
+        --black : #000;
+        --purple-001: #7077ff;
+        --purple-002: #474d91;
+        --purple-003: #363b6c;
+        --purple-004: #242431;
+        --purple-005: #161618;
+
+    }
+`;
+
+export { styles, breakpoints, GlobalStyles };

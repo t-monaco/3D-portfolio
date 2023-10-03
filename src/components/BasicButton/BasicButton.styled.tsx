@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { breakpoints } from "../../styles";
 
 export const BasicButton = styled.button<object>`
-    border: 2px solid #7077ff;
+    border: 2px solid var(--purple-001);
     padding: 0.5rem;
     position: relative;
     width: 100%;
 
     &::after {
-        background: #7077ff;
+        background: var(--purple-001);
         content: "";
         inset: 0;
         position: absolute;
@@ -17,10 +17,10 @@ export const BasicButton = styled.button<object>`
         transition: transform 0.4s cubic-bezier(0.1, 0.8, 0.3, 1);
         z-index: -1;
     }
-    color: #7077ff;
+    color: var(--purple-001);
 
     &:hover {
-        color: #fff;
+        color: var(--white);
 
         &::after {
             transform: scaleX(1);

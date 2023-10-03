@@ -17,22 +17,22 @@ export const FormFieldContainer = styled.div<object>`
         font-size: 0.9rem;
 
         &:has(+ input:focus) {
-            color: #7077ff;
+            color: var(--purple-001);
         }
     }
 
     & input {
         background: none;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid var(--white);
         outline: none;
         padding-bottom: 0.4rem;
 
         &:focus {
-            border-color: #7077ff;
+            border-color: var(--purple-001);
         }
 
         &::placeholder {
-            color: #474d91;
+            color: var(--purple-002);
         }
     }
 `;
