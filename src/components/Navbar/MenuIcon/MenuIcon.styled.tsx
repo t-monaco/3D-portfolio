@@ -4,7 +4,7 @@ const CONTAINER_LENGTH_UNITS = 4; // size in rem
 
 export const MenuIconContainer = styled.div<object>`
     align-items: center;
-    background-color: var(--purple-004);
+    background-color: var(--purple-005);
     border: 0;
     border-radius: ${CONTAINER_LENGTH_UNITS * 0.5}rem;
     cursor: pointer;
