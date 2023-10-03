@@ -1,6 +1,7 @@
 import { Reveal } from "..";
 import ParallaxText from "../ParallaxText";
 import * as Styled from "./Main.styled";
+import { default as Waves } from "../../assets/waves-main.svg";
 
 type MainProps = object;
 
@@ -21,6 +22,11 @@ const Main: React.FC<MainProps> = () => {
             >
                 <ParallaxText baseVelocity={-3}>Tomas Monaco</ParallaxText>
             </Styled.ScrollTextContainer>
+            <img
+                src={Waves}
+                alt="waves"
+                className="block absolute  bottom-0 left-0 -z-10"
+            />
         </Styled.MainContainer>
     );
 };
