@@ -4,7 +4,7 @@ import { breakpoints } from "../../../styles";
 const SIDEBAR_WIDTH_MD = "32rem";
 
 export const SidebarMenuContainer = styled.div<object>`
-    background-color: #050816;
+    background-color: #161618;
     border-bottom-left-radius: 90vw 100vh;
     border-top-left-radius: 90vw 100vh;
     cursor: pointer;
@@ -29,7 +29,7 @@ export const SidebarMenuContainer = styled.div<object>`
     z-index: 9;
 
     &::before {
-        background-color: #1c1d20;
+        background-color: #26293f;
         border-radius: 100% 0% 0% 37% / 62% 0% 0% 22%;
         content: "";
         height: 100vh;
@@ -129,6 +129,6 @@ export const DownloadLink = styled.a<object>`
     }
 
     &:hover {
-        color: #ffcb00;
+        color: #7077ff;
     }
 `;
