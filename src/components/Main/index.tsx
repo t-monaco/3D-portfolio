@@ -6,10 +6,7 @@ type MainProps = object;
 
 const Main: React.FC<MainProps> = () => {
     return (
-        <div
-            className={`w-scree h-screen bg-main-solid bg-cover bg-bottom -z-10 relative overflow-hidden flex flex-col justify-end`}
-            id="home"
-        >
+        <Styled.MainContainer id="home" className="my-section">
             <Reveal>
                 <Styled.ProfessionContainer id="profession">
                     <h2 className="flex flex-col">
@@ -24,7 +21,7 @@ const Main: React.FC<MainProps> = () => {
             >
                 <ParallaxText baseVelocity={-3}>Tomas Monaco</ParallaxText>
             </Styled.ScrollTextContainer>
-        </div>
+        </Styled.MainContainer>
     );
 };
 

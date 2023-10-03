@@ -1,21 +1,15 @@
 import { Reveal } from "..";
-import { default as DottedPattern } from "../../assets/dotted-pat.svg";
-import { default as StrokePattern } from "../../assets/stroke-pat.svg";
+import { default as Waves } from "../../assets/waves-about.svg";
 
 type AboutProps = object;
 
 const About: React.FC<AboutProps> = () => {
     return (
-        <div id="about" className="text-black bg-[#d2d2d2] my-section">
+        <div id="about" className="my-section">
             <img
-                src={DottedPattern}
-                alt="dotted pattern"
-                className="hidden md:block absolute top-[7rem] left-[7rem]"
-            />
-            <img
-                src={StrokePattern}
-                alt="stroke pattern"
-                className="hidden md:block absolute bottom-[7rem] right-[10rem]"
+                src={Waves}
+                alt="waves"
+                className="block absolute  inset-0 -z-10"
             />
             <div className={`common-content`}>
                 <Reveal>

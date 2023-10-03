@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { PacmanLoader } from "react-spinners";
 import toast, { Toaster } from "react-hot-toast";
+import { default as Waves } from "../../assets/waves-contact.svg";
 
 type ContactProps = object;
 
@@ -54,8 +55,13 @@ const Contact: React.FC<ContactProps> = () => {
     };
 
     return (
-        <div id="contact" className="my-section text-black my-section">
+        <div id="contact" className="my-section">
             <Toaster />
+            <img
+                src={Waves}
+                alt="waves"
+                className="block absolute  inset-0 -z-10"
+            />
             <div className="common-content">
                 <div className="flex flex-col gap-5 items-center">
                     <h3 className="text-5xl text-center font-semibold">

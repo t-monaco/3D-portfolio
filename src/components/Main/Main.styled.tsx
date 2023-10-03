@@ -1,5 +1,18 @@
 import styled from "styled-components";
 import { breakpoints } from "../../styles";
+import { default as BgImage } from "./../../assets/main-transp.png";
+
+export const MainContainer = styled.main<object>`
+    background: url(${BgImage}),
+        linear-gradient(180deg, #363b6c 20.83%, #242431 80.73%);
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+`;
 
 export const ScrollTextContainer = styled.section<object>`
     display: flex;
