@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MenuIcon from "./MenuIcon";
-import SidebarMenu from "./SidebarMenu";
 import { disableScroll, enableScroll } from "../../utils/scroll";
+import SidebarMenu from "./SideBarMenu";
 
 type NavbarProps = object;
 

@@ -1,6 +1,6 @@
-import * as Styled from "./SidebarMenu.styled";
 import { HashLink } from "react-router-hash-link";
 import { default as ResumePDF } from "./../../../assets/pdf/resume-tomas_monaco.pdf";
+import * as Styled from "./SidebarMenu.styled";
 
 type SidebarMenuProps = { isOpen: boolean; onClick: () => void };
 

@@ -18,19 +18,35 @@ const About: React.FC<AboutProps> = () => {
                 <Reveal>
                     <div className={`text-container`}>
                         <p>
-                            I'm a software engineer, Lorem ipsum, dolor sit amet
-                            consectetur adipisicing elit. Odio ullam incidunt
-                            architecto harum amet.
+                            Hey there, I'm <b className="text-xl">Tomas</b>. I'm
+                            not your run-of-the-mill developer. I'm passionate
+                            about bringing innovative concepts to life through
+                            code.
                         </p>
                         <p>
-                            Expedita delectus quis impedit quia, quae totam
-                            perspiciatis, recusandae laudantium maiores officiis
-                            quod velit omnis aut.
+                            My journey in the world of tech has equipped me with
+                            a diverse set of skills across various programming
+                            languages and frameworks. Whether it's unraveling
+                            complex challenges or crafting elegant solutions, I
+                            thrive on the art of creation.
                         </p>
                         <p>
-                            Expedita delectus quis impedit quia, quae totam
-                            perspiciatis, recusandae laudantium maiores officiis
-                            quod velit omnis aut.
+                            But what truly sets me apart is my unwavering
+                            determination. When I'm involved in a project, I go
+                            full throttle, pushing boundaries and embracing
+                            challenges with gusto. While I have a deep-rooted
+                            love for data-driven projects and a fascination with
+                            the ever-evolving landscape of machine learning.
+                        </p>
+                        <p>
+                            I'm not just seeking opportunities; I'm on the
+                            lookout for purpose-driven collaborations that allow
+                            both personal and collective growth.
+                        </p>
+                        <p>
+                            Join me on this exciting adventure where we turn
+                            ideas into remarkable digital experiences. Let's
+                            make a difference together.
                         </p>
                     </div>
                 </Reveal>
