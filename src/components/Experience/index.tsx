@@ -5,11 +5,6 @@ type ExperienceProps = object;
 const Experience: React.FC<ExperienceProps> = () => {
     return (
         <div id="experience" className="my-section">
-            <img
-                src={Waves}
-                alt="waves"
-                className="block absolute  bottom-0 left-0 -z-10"
-            />
             <div className="common-content">
                 <h3 className="common-title">Experience</h3>
                 <div className="text-container">
@@ -30,6 +25,11 @@ const Experience: React.FC<ExperienceProps> = () => {
                     </p>
                 </div>
             </div>
+            <img
+                src={Waves}
+                alt="waves"
+                className="block absolute  bottom-0 left-0 -z-10"
+            />
         </div>
     );
 };
