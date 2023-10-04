@@ -7,7 +7,7 @@ type MainProps = object;
 
 const Main: React.FC<MainProps> = () => {
     return (
-        <Styled.MainContainer id="home" className="my-section">
+        <Styled.MainContainer id="home">
             <Reveal>
                 <Styled.ProfessionContainer id="profession">
                     <h2 className="flex flex-col">

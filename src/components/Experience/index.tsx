@@ -9,19 +9,33 @@ const Experience: React.FC<ExperienceProps> = () => {
                 <h3 className="common-title">Experience</h3>
                 <div className="text-container">
                     <p>
-                        I'm a software engineer, Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Odio ullam incidunt
-                        architecto harum amet.
+                        In my most recent role, I led UX analysis for a diverse
+                        array of client webpages, a task that demanded a keen
+                        eye for user experience optimization. My notable
+                        achievement involved spearheading the redesign of a
+                        critical application. I crafted a robust React component
+                        library from scratch and seamlessly integrated it with a
+                        new API, empowering data-driven components.
+                        Additionally, I successfully managed deployment
+                        pipelines and environments, ensuring smooth project
+                        delivery.
                     </p>
                     <p>
-                        Expedita delectus quis impedit quia, quae totam
-                        perspiciatis, recusandae laudantium maiores officiis
-                        quod velit omnis aut.
+                        Prior to that, I executed both frontend and backend
+                        business logic, showcasing versatility in my technical
+                        skills. My responsibilities spanned data manipulation,
+                        dynamic visualization, and effective web content
+                        management. I also demonstrated proficiency in email
+                        marketing and automation, further expanding my skill
+                        set.
                     </p>
+
                     <p>
-                        Expedita delectus quis impedit quia, quae totam
-                        perspiciatis, recusandae laudantium maiores officiis
-                        quod velit omnis aut.
+                        In a previous role, I significantly enhanced payroll
+                        process efficiency through the implementation of
+                        automation. This involved data preprocessing, intricate
+                        manipulation, and creating insightful visualizations,
+                        ultimately streamlining critical financial processes.
                     </p>
                 </div>
             </div>

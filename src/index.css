@@ -16,7 +16,7 @@
 
 @layer components {
     .my-section {
-        @apply w-screen h-screen relative;
+        @apply w-screen min-h-screen relative grid place-items-center;
     }
 
     .my-section > div {
@@ -24,7 +24,7 @@
     }
 
     .common-content {
-        @apply text-justify px-8 h-screen flex flex-col gap-10 justify-center mx-auto;
+        @apply text-justify px-8 flex flex-col gap-10 justify-center mx-auto pt-[4rem] md:pt-0;
     }
 
     .common-content .common-title {
