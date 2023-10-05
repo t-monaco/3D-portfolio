@@ -15,8 +15,9 @@
     "@react-spring/parallax": "^9.7.3",
     "@react-spring/web": "^9.7.3",
     "@react-three/drei": "^9.84.1",
-    "@react-three/fiber": "^8.14.2",
+    "@react-three/fiber": "^8.14.4",
     "@types/react-router-hash-link": "^2.4.7",
+    "@types/three": "^0.156.0",
     "@vercel/analytics": "^1.0.2",
     "framer-motion": "^10.16.4",
     "maath": "^0.9.0",
@@ -30,6 +31,7 @@
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^6.0.8",
+    "three": "^0.157.0",
     "vite-plugin-svgr": "^4.0.0"
   },
   "devDependencies": {

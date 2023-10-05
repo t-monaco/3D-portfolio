@@ -1,4 +1,4 @@
-import { Reveal } from "..";
+import { Reveal, Tech } from "..";
 import { default as Waves } from "../../assets/waves-exp.svg";
 
 type ExperienceProps = object;
@@ -45,6 +45,7 @@ const Experience: React.FC<ExperienceProps> = () => {
                     </div>
                 </Reveal>
             </div>
+            <Tech />
             <img
                 src={Waves}
                 alt="waves"
