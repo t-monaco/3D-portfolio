@@ -19,7 +19,14 @@ import pandas from "./tech/pandas-3.svg";
 import numpy from "./tech/numpy.svg";
 import github from "./tech/github.png";
 
+import wt from "./company/wt-04.png";
+import ba from "./company/ba.png";
+import medallia from "./company/medallia-01.png";
+
 export {
+    wt,
+    medallia,
+    ba,
     css,
     docker,
     git,
