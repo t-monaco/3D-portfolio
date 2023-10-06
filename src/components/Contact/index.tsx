@@ -61,7 +61,7 @@ const Contact: React.FC<ContactProps> = () => {
                 alt="waves"
                 className="block absolute  inset-0 -z-10"
             />
-            <div className="common-content">
+            <div className="common-content max-w-[800px]">
                 <div className="flex flex-col gap-5 items-center">
                     <Reveal>
                         <h3 className="text-5xl text-center font-semibold">

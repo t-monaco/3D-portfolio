@@ -1,5 +1,5 @@
 import {
-    docker,
+    // docker,
     git,
     graphql,
     mongodb,
@@ -16,6 +16,9 @@ import {
     tensorflow,
     typescript,
     vitejs,
+    medallia,
+    wt,
+    ba,
 } from "../assets";
 
 export const navLinks = [
@@ -51,6 +54,60 @@ export const navLinks = [
 //         icon: creator,
 //     },
 // ];
+
+const about = {
+    title: "About Me",
+    content: [
+        "My journey in the world of tech has equipped me with a diverse set of skills across various programming languages and frameworks. Whether it's unraveling complex challenges or crafting elegant solutions, I thrive on the art of creation.",
+        "But what truly sets me apart is my unwavering determination. When I'm involved in a project, I go full throttle, pushing boundaries and embracing challenges with gusto. While I have a deep-rooted love for data-driven projects and a fascination with the ever-evolving landscape of machine learning.",
+        "I'm not just seeking opportunities; I'm on the lookout for purpose-driven collaborations that allow both personal and collective growth.",
+        "Join me on this exciting adventure where we turn ideas into remarkable digital experiences. Let's make a difference together.",
+    ],
+};
+
+const experiences = [
+    {
+        title: "Software Engineer",
+        company_name: "Medallia",
+        icon: medallia,
+        iconBg: "#e9e9e9",
+
+        date: "2023 - 2021",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Full-Stack Developer",
+        company_name: "Wunderman Thompson",
+        iconBg: "#e9e9e9",
+
+        icon: wt,
+        date: "2021 - 2019",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+    {
+        title: "Payroll Automation",
+        company_name: "Police of Buenos Aires",
+        iconBg: "#e9e9e9",
+        icon: ba,
+        date: "2019 - 2017",
+        points: [
+            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
+];
 
 const technologies = [
     {
@@ -123,55 +180,4 @@ const technologies = [
     // },
 ];
 
-const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
-
-export { experiences, technologies };
+export { about, experiences, technologies };
