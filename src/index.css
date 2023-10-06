@@ -19,12 +19,8 @@
         @apply w-screen min-h-screen relative grid place-items-center;
     }
 
-    .my-section > div {
-        @apply w-screen md:max-w-[800px] mx-auto;
-    }
-
     .common-content {
-        @apply text-justify px-8 flex flex-col gap-10 justify-center mx-auto pt-[4rem] md:pt-0;
+        @apply w-screen  md:max-w-[1170px] text-justify px-8 flex flex-col gap-10 justify-center mx-auto pt-[4rem] md:pt-0;
     }
 
     .common-content .common-title {
