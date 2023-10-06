@@ -10,6 +10,9 @@ import Main from "./Main";
 import Navbar from "./Navbar";
 import ParallaxText from "./ParallaxText";
 import Reveal from "./Reveal";
+import Tech from "./Tech";
+import Sphere from "./Sphere";
+import SphereCanvas from "./SphereCanvas";
 
 export {
     About,
@@ -24,4 +27,7 @@ export {
     Navbar,
     ParallaxText,
     Reveal,
+    Tech,
+    SphereCanvas,
+    Sphere,
 };
