@@ -41,7 +41,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ isOpen, onClick }) => {
                     </Styled.SidebarListItem>
                     <Styled.DownloadLink
                         href={ResumePDF}
-                        download="resume_tomas_monaco.pdf"
+                        download="resume-tomas_monaco.pdf"
                         target="_blank"
                     >
                         Download Resume
@@ -54,13 +54,28 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({ isOpen, onClick }) => {
                 </h2>
                 <ul className="flex justify-between">
                     <li>
-                        <Styled.SocialLink href="">LinkedIn</Styled.SocialLink>
+                        <Styled.SocialLink
+                            target="_blank"
+                            href="https://www.linkedin.com/in/tamonaco/"
+                        >
+                            LinkedIn
+                        </Styled.SocialLink>
                     </li>
                     <li>
-                        <Styled.SocialLink href="">Github</Styled.SocialLink>
+                        <Styled.SocialLink
+                            target="_blank"
+                            href="https://github.com/t-monaco"
+                        >
+                            Github
+                        </Styled.SocialLink>
                     </li>
                     <li>
-                        <Styled.SocialLink href="">Mail</Styled.SocialLink>
+                        <Styled.SocialLink
+                            target="_blank"
+                            href="mailto:monacotomas99@gmail.com"
+                        >
+                            Mail
+                        </Styled.SocialLink>
                     </li>
                 </ul>
             </section>
