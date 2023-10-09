@@ -6,7 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiences } from "../../constants";
-import { default as Wa } from "../../assets/blob-bg.svg";
+import { default as BlobBg } from "../../assets/blob-bg.svg";
 
 type ExperienceCardProps = {
     experience: {
@@ -23,8 +23,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
     return (
         <VerticalTimelineElement
             contentStyle={{
-                // background: "#363b6c",
-                background: `url(${Wa})`,
+                background: `url(${BlobBg})`,
                 backgroundSize: "cover",
                 color: "#fff",
                 position: "relative",

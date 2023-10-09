@@ -119,7 +119,7 @@ const Contact: React.FC<ContactProps> = () => {
                                 }}
                                 label="Your Message"
                                 fieldName="message"
-                                placeholder="TODO: Hi, I think we need a design system for our products at Company X. How soon can you hop on to discuss this?"
+                                placeholder="Your work is seriously impressive! I've got my eye on your skills, and I'm thinking it's time to join forces. Let's talk."
                                 errorsKeys={Object.keys(errors)}
                             />
                         </div>
