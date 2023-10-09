@@ -59,10 +59,8 @@ const experiences = [
 
         date: "2023 - 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Led UX analysis for diverse client webpages. Spearheaded app redesign, by creating a React component library and the integration with a new API for data-driven components.",
+            "Managed deployment pipelines and environments.",
         ],
     },
     {
@@ -73,10 +71,8 @@ const experiences = [
         icon: wt,
         date: "2021 - 2019",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Executed frontend and backend business logic, data manipulation, visualization, and web content management.",
+            "Proficient in email marketing and automation.",
         ],
     },
     {
@@ -86,10 +82,8 @@ const experiences = [
         icon: ba,
         date: "2019 - 2017",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Enhanced payroll process efficiency through automation.",
+            "Responsibilities included data preprocessing, manipulation, analysis and visualization.",
         ],
     },
 ];
