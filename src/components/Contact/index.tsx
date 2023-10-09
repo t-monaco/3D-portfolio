@@ -130,7 +130,7 @@ const Contact: React.FC<ContactProps> = () => {
                                     <PacmanLoader color="#000000" size={12} />
                                 </div>
                             ) : (
-                                "SHOOT BRO"
+                                "SHOOT"
                             )}
                         </BasicButton>
                     </form>
