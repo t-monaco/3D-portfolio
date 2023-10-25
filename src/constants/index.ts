@@ -71,19 +71,19 @@ const experiences = [
         icon: wt,
         date: "2021 - 2019",
         points: [
-            "Executed frontend and backend business logic, data manipulation, visualization, and web content management.",
-            "Proficient in email marketing and automation.",
+            "Developed and maintained both frontend and backend components, handling business logic, data manipulation, and web content management.",
+            "Proficient in email marketing and automation for comprehensive web solutions.",
         ],
     },
     {
-        title: "Payroll Automation",
+        title: "Data Analyst (Payroll)",
         company_name: "Police of Buenos Aires",
         iconBg: "#e9e9e9",
         icon: ba,
         date: "2019 - 2017",
         points: [
-            "Enhanced payroll process efficiency through automation.",
-            "Responsibilities included data preprocessing, manipulation, analysis and visualization.",
+            "Managed payroll data analysis, reporting, and discrepancy resolution in collaboration with cross-functional teams.",
+            "Identified process improvement opportunities, ensuring data integrity and confidentiality.",
         ],
     },
 ];
