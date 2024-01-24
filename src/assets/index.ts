@@ -22,10 +22,12 @@ import github from "./tech/github.png";
 import wt from "./company/wt-04.png";
 import ba from "./company/ba.png";
 import medallia from "./company/medallia-01.png";
+import freelancing from "./company/freelancing.png";
 
 export {
     wt,
     medallia,
+    freelancing,
     ba,
     css,
     docker,
