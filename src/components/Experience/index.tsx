@@ -16,6 +16,8 @@ type ExperienceCardProps = {
         icon: string;
         date: string;
         points: string[];
+        keyFeatures?: string[];
+        footer?: string;
     };
 };
 
@@ -41,7 +43,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
                 </div>
             }
         >
-            {/* <img src={Wa} className="absolute inset-0 -z-0" /> */}
             <div className="relative">
                 <h3 className="text-2xl font-bold">{experience.title}</h3>
                 <p className="text-base font-semibold">
@@ -58,6 +59,26 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
                     </li>
                 ))}
             </ul>
+            {experience?.keyFeatures && (
+                <div className="">
+                    <p className="text-base font-semibold">Key Features:</p>
+                    <ul className="mt-5 list-disc ml-5 space-y-2 relative">
+                        {experience.keyFeatures.map((feature, idx) => (
+                            <li
+                                key={`experience-point-${idx}`}
+                                className="text-sm pl-1 tracking-wider"
+                            >
+                                {feature}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
+            {experience?.footer && (
+                <span className="block mt-4 text-sm font-light">
+                    {experience.footer}
+                </span>
+            )}
         </VerticalTimelineElement>
     );
 };
@@ -73,36 +94,6 @@ const Experience: React.FC<ExperienceProps> = () => {
                 </Reveal>
                 <Reveal>
                     <div className="text-container">
-                        {/* <p>
-                            In my most recent role, I led UX analysis for a
-                            diverse array of client webpages, a task that
-                            demanded a keen eye for user experience
-                            optimization. My notable achievement involved
-                            spearheading the redesign of a critical application.
-                            I crafted a robust React component library from
-                            scratch and seamlessly integrated it with a new API,
-                            empowering data-driven components. Additionally, I
-                            successfully managed deployment pipelines and
-                            environments, ensuring smooth project delivery.
-                        </p>
-                        <p>
-                            Prior to that, I executed both frontend and backend
-                            business logic, showcasing versatility in my
-                            technical skills. My responsibilities spanned data
-                            manipulation, dynamic visualization, and effective
-                            web content management. I also demonstrated
-                            proficiency in email marketing and automation,
-                            further expanding my skill set.
-                        </p>
-
-                        <p>
-                            In a previous role, I significantly enhanced payroll
-                            process efficiency through the implementation of
-                            automation. This involved data preprocessing,
-                            intricate manipulation, and creating insightful
-                            visualizations, ultimately streamlining critical
-                            financial processes.
-                        </p> */}
                         <VerticalTimeline
                         // className="w-full"
                         >

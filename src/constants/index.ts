@@ -17,6 +17,7 @@ import {
     typescript,
     vitejs,
     medallia,
+    freelancing,
     wt,
     ba,
 } from "../assets";
@@ -52,12 +53,31 @@ const about = {
 
 const experiences = [
     {
+        title: "Full-Stack Engineer",
+        company_name: "Freelancing (latest project)",
+        icon: freelancing,
+        iconBg: "#727272",
+
+        date: "2024",
+        points: [
+            "Introducing Berserker App - the game-changer in Crossfit programming that I've crafted from design to code. 🏋️‍♂️✨",
+            "🔥Berserker App is not just a fitness app; it's a NextJS masterpiece, leveraging the latest web development features. As the brainchild behind the design, prototyping, and full-stack development, I've reimagined how coaches submit programming and how athletes conquer their workouts.",
+        ],
+        keyFeatures: [
+            "NextJS Marvel: Experience the power of the latest NextJS features for a lightning-fast, dynamic fitness journey.",
+            "Sleek Design: A visually stunning interface that makes engaging with workouts a pleasure.",
+            "Secure Authentication: Powered by ClerkJS for robust and stylish user authentication.",
+            "Data Backbone: The beating heart of the app relies on Xata, a Serverless database platform backed by PostgreSQL.",
+        ],
+        footer: "*Take a look at some snapshots on my LinkedIn profile!",
+    },
+    {
         title: "Software Engineer",
         company_name: "Medallia",
         icon: medallia,
         iconBg: "#e9e9e9",
 
-        date: "2023 - 2021",
+        date: "2021 - 2023",
         points: [
             "Led UX analysis for diverse client webpages. Spearheaded app redesign, by creating a React component library and the integration with a new API for data-driven components.",
             "Managed deployment pipelines and environments.",
@@ -69,7 +89,7 @@ const experiences = [
         iconBg: "#e9e9e9",
 
         icon: wt,
-        date: "2021 - 2019",
+        date: "2019 - 2021",
         points: [
             "Developed and maintained both frontend and backend components, handling business logic, data manipulation, and web content management.",
             "Proficient in email marketing and automation for comprehensive web solutions.",
@@ -80,7 +100,7 @@ const experiences = [
         company_name: "Police of Buenos Aires",
         iconBg: "#e9e9e9",
         icon: ba,
-        date: "2019 - 2017",
+        date: "2017 - 2019",
         points: [
             "Managed payroll data analysis, reporting, and discrepancy resolution in collaboration with cross-functional teams.",
             "Identified process improvement opportunities, ensuring data integrity and confidentiality.",
