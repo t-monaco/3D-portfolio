@@ -57,7 +57,7 @@ const experiences = [
         title: "Software Engineer",
         company_name: "ReadyTech",
         icon: readytech,
-        iconBg: "#727272",
+        iconBg: "#e9e9e9",
 
         date: "2024 - Present",
         points: [
