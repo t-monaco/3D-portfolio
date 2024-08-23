@@ -20,6 +20,7 @@ import {
     freelancing,
     wt,
     ba,
+    readytech,
 } from "../assets";
 
 // const services = [
@@ -52,6 +53,25 @@ const about = {
 };
 
 const experiences = [
+    {
+        title: "Software Engineer",
+        company_name: "ReadyTech",
+        icon: readytech,
+        iconBg: "#727272",
+
+        date: "2024 - Present",
+        points: [
+            "Actively involved in the design and development of innovative features for education technology products, collaborating closely with cross-functional teams, including technical leads, product managers, and product designers.",
+            "Spearheaded the development of a new user interface using the Next.js tech stack, focusing on delivering an exceptional user experience (UX) that aligns with the latest industry standards.",
+            "Conducted comprehensive code reviews to ensure codebase consistency, adherence to company standards, and alignment with best practices. Provided constructive feedback on pull requests, contributing to continuous team improvement and knowledge sharing.",
+        ],
+        keyFeatures: [
+            "Next.js: Leveraged the robust capabilities of Next.js and React to build dynamic, high-performance web applications.",
+            "TypeScript: Utilized TypeScript for its strong typing and improved tooling, enabling scalable and maintainable codebases.",
+            "Figma: Collaborated on design and workflow visualization using Figma, ensuring seamless communication and alignment across the team.",
+            "Material UI (MUI): Implemented standardized UI components with Material UI, facilitating a consistent and cohesive design language across all products.",
+        ],
+    },
     {
         title: "Full-Stack Engineer",
         company_name: "Freelancing (latest project)",
