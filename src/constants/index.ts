@@ -73,12 +73,12 @@ const experiences = [
         ],
     },
     {
-        title: "Full-Stack Engineer",
-        company_name: "Freelancing (latest project)",
+        title: "Software Engineer",
+        company_name: "Besrker Program (FEX)",
         icon: freelancing,
         iconBg: "#727272",
 
-        date: "2024",
+        date: "2023 - 2024",
         points: [
             "Introducing Berserker App - the game-changer in Crossfit programming that I've crafted from design to code. 🏋️‍♂️✨",
             "🔥Berserker App is not just a fitness app; it's a NextJS masterpiece, leveraging the latest web development features. As the brainchild behind the design, prototyping, and full-stack development, I've reimagined how coaches submit programming and how athletes conquer their workouts.",
@@ -102,10 +102,15 @@ const experiences = [
             "Led UX analysis for diverse client webpages. Spearheaded app redesign, by creating a React component library and the integration with a new API for data-driven components.",
             "Managed deployment pipelines and environments.",
         ],
+        keyFeatures: [
+            "Writing, testing, and maintaining program code to meet system requirements, system designs, and technical specifications, ensuring adherence to accredited quality standards.",
+            "Researching, consulting, and analysing system programs needs to ensure alignment with organisational objectives.",
+            "Managing the automation of software testing and deployment processes.",
+        ],
     },
     {
         title: "Full-Stack Developer",
-        company_name: "Wunderman Thompson",
+        company_name: "Wunderman Thompson (VML)",
         iconBg: "#e9e9e9",
 
         icon: wt,
@@ -114,9 +119,14 @@ const experiences = [
             "Developed and maintained both frontend and backend components, handling business logic, data manipulation, and web content management.",
             "Proficient in email marketing and automation for comprehensive web solutions.",
         ],
+        keyFeatures: [
+            "Developing and maintaining program code in accordance with system requirements, design specifications, and technical standards, while ensuring compliance with recognized quality standards.",
+            "Creating, updating, and maintaining technical documentation, end-user guides, and operational procedures to ensure seamless integration and usability of software systems.",
+            "Developing and implementing tools to support software development, management, and optimisation, enhancing operational efficiency.",
+        ],
     },
     {
-        title: "Data Analyst (Payroll)",
+        title: "Programmer & Analyst",
         company_name: "Police of Buenos Aires",
         iconBg: "#e9e9e9",
         icon: ba,
@@ -124,6 +134,11 @@ const experiences = [
         points: [
             "Managed payroll data analysis, reporting, and discrepancy resolution in collaboration with cross-functional teams.",
             "Identified process improvement opportunities, ensuring data integrity and confidentiality.",
+        ],
+        keyFeatures: [
+            "Gathering, cleaning, and interpreting data using advanced IT tools, automating manual processes through tailored scripts and spreadsheets, and presenting results through interactive visualisations (graphs, charts, dashboards). This significantly improved team productivity, operational monitoring, and decision-making.",
+            "Programming, testing, and maintaining software programs to streamline operations, automate complex tasks, and enhance business process efficiency and accuracy.",
+            "Conducting in-depth analysis, producing requirements documentation, and developing system plans for business-critical applications.",
         ],
     },
 ];
